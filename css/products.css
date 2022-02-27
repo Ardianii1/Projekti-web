@@ -1,0 +1,254 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+.productdiv{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+}
+.productdiv h1, h6, h4{
+    text-align: center;
+}
+
+.samsung, .lenovo, .apple, .hp, .dell{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.samsung-product, 
+.lenovo-product, 
+.apple-product, 
+.hp-product, 
+.dell-product{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-auto-rows: auto;
+    grid-column-gap: 2rem;
+    width: 1500px;
+    justify-content: center;   
+    /* overflow: hidden; */
+    height: auto;
+
+}
+
+
+/* @media(min-width : 1024px) and (max-width : 1300px){ */
+    /* .productdiv{
+        width: 1300px;
+
+        margin-top: 50px;
+        display: grid;
+        justify-content: st;
+    }
+    .samsung, .lenovo, .apple, .hp, .dell{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .samsung-product, 
+    .lenovo-product, 
+    .apple-product, 
+    .hp-product, 
+    .dell-product{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: auto;
+    grid-column-gap: 2rem;
+    justify-content: start;   
+    overflow: hidden;
+    height: auto;
+    } */
+/* } */
+/* @media(max-width : 768px){ */
+    /* .productdiv{
+        width: 768px;
+        margin-top: 50px;
+        display: grid;
+        justify-content: center;
+    }
+    .samsung, .lenovo, .apple, .hp, .dell{
+        width: 768px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .card1{
+        margin: 1em;
+        margin-bottom: 2rem;
+        width: 250px;
+        height: 390px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 20px 20px  rgba(0, 0, 0, 0.90);
+        border: 1px solid black;
+      }
+    .samsung-product, 
+    .lenovo-product, 
+    .apple-product, 
+    .hp-product, 
+    .dell-product{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: auto;
+    grid-column-gap: 1.5rem;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+    } */
+
+/* } */
+
+
+
+
+/* PRODUCT CARD*/
+.card1{
+    /* margin: 1em; */
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 14px 23px  rgba(0, 0, 0, 0.90);
+    border: 1px solid black;
+}
+.product1-img{
+    width: 300px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-position: -20px -5px ;
+    background-size: cover;
+}
+.product1-img img{
+    position: relative;
+    left: 4%;
+    top: 5%;
+}
+.product-detail1{
+    width: 300px;
+    height: 190px;
+    background-color: #21222d;
+    border-radius: 0 40% 15px 15px;
+    padding: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+.rating1{
+    font-size: 0.7rem;
+    color: #fdcc0d;
+    user-select: none;
+}
+.product-detail1 p{
+    text-align: left;
+    margin: 0 0 0 0;
+    font-size: 0.8rem;
+    color: #adadbd;
+}
+
+.buttons1{
+    height: 65px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price1{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.bttn{
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #35353f;
+    color: #fff;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.cart1{
+    width: 160px;
+}
+
+.favourite1{
+    width: 40px;
+    border-radius: 50px;
+}
+.bttn::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #35353f;
+    height: 45px;
+    transition: 0.3s;
+}
+.cart1::before{
+    width: 165px;
+    border-radius: 50px;
+}
+.favourite1::before{
+    width: 45px;
+    border-radius: 50%;
+}
+.btn:hover::before{
+    border-color: #fff;
+}
+
+
+@media screen and (max-width : 412px){
+    .productdiv{
+        width: 412px;
+        font-size: 10px;
+        margin-top: 50px;
+        display: grid;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+    .samsung, .lenovo, .apple, .hp, .dell{
+        width: 412px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .card1{
+        /* margin-left: -px; */
+        margin-bottom: 2rem;
+        width: 300px;
+        height: 420px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 13px 23px  rgba(0, 0, 0, 0.60);
+        border: 1px solid rgb(180, 176, 176);
+      }
+      .card1 span{
+          font-size: 19px;
+      }
+      
+    .samsung-product, 
+    .lenovo-product, 
+    .apple-product, 
+    .hp-product, 
+    .dell-product{
+        margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-auto-rows: auto;
+    grid-column-gap: 1rem;
+    margin-left: 3rem;
+    justify-content: start;
+    overflow: hidden;
+    height: auto;
+    }
+    .product1-img img{
+        position: relative;
+        /* left: 4%; */
+        /* top: 5%; */
+    }
+    /* .title{
+        font-size: 17px;
+    } */
+
+}

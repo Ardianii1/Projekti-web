@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.div1{
+  margin-top: 30px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  .kontainer{
+    position: absolute;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+  }
+  .contactinfo {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info{
+    position: relative;
+    margin: 20px 0;
+  }
+  .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0 ;
+    cursor: pointer;
+    align-items: flex-start;
+  }
+  .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+  }
+  .info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+  }
+  
+  .info li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+  }
+  .info li:hover span:nth-child(1) img,
+  .info li:hover span:nth-child(2){
+    opacity: 1;
+  }
+  .sci{
+    position: relative;
+    display: flex;
+  }
+  .sci li{
+    list-style: none;
+    margin-right: 15px;
+  }
+  .sci li a{
+    text-decoration: none;
+  }
+  .sci li a img{
+    filter: invert(1);
+    opacity: 0.5;
+  }
+  .sci li:hover a img{
+    opacity: 1;
+  }
+  
+  .contactForm{
+    position: absolute;
+    padding: 30px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+  }
+  .contactinfo h2{
+    color: #fff;
+  }
+  .h2{
+    
+    user-select: none;
+    text-align: center;
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+  }
+  .inputBox.w50{
+    width: 47%;
+  }
+  .inputBox.w100{
+    width: 100%;
+  }
+  .contactForm input, textarea, button{
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+  }
+  .inputBox textarea{
+    resize: none;
+    min-height: 120px;
+  }
+  /* .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+  } */
+  /* input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+  } */
+  .contactForm button[type="submit"]{
+    position: relative;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    width: 120px;
+    padding: 12px;
+    border-radius: 22px;
+    margin-top: -10px;
+  }
+  
+  
+  @media(max-width  : 1200px){
+    .kontainer{
+      width: 90%;
+      min-width: auto;
+      margin: 20px;
+    }
+    .contactinfo{
+      top: 0;
+      height: 550px;
+      position: absolute;
+      box-shadow: none;
+    }
+  }
+  .text-danger{
+      margin: 0 1em 0 0;
+      text-align: left;
+    font-size: 12px;
+    display: block;
+    transform: translate(30px 0px);
+  }
+  
+  @media(max-width : 320px){
+    .bodyy{
+      size: [horizontal];
+    }
+    .apc{
+      width: 10%;
+    }
+    .logo{
+      width: 40px;
+      height: 20px;
+    }
+  }
+  
+  #error{
+    color: #FF0000;
+     position: relative;
+     font-size: 14px;
+  }
+  .error {
+    display: block;
+    color: #FF0000;
+  }
+  /* .error{
+    font-size: 14px;
+    color: red;
+   
+    top: 3px;
+  } */
+  
+  .succsessMessage{
+    font-size: smaller;
+    color: green;
+    text-align: center;
+    background-color: lightgreen;
+    position: relative;
+    top: 5px;
+  }

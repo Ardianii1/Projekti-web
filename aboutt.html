@@ -1,0 +1,168 @@
+<!-- <?php
+session_start();
+if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
+        header("location: login.php");
+    }
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<header class="header">
+    <nav class="navbar fixed-top navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+        &nbsp;
+        <a href="index.php"><img src="img/logo.png" alt="Logo" width="150px" height="40px"></a>
+
+
+        <a href="index.php">Home</a>
+        <a href="about.php">About</a>
+        <a href="products.php">Products</a>
+        <a href="contact.php">Contact</a>
+        <a href="services.php">Services</a>
+
+        <!-- <?php
+      
+      $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+      $row_count = mysqli_num_rows($select_rows);
+
+      ?> -->
+        <a href="cart.php" class="cart" style=""><span>🛒</span></a>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search.." aria-label="Search">
+            <!-- <button class="btn " type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button> -->
+        </form>
+        <!-- <div class="dropdown-show" >
+                <a class="btn dropdown-toggle" href="#"  data-bs-toggle="dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg></a>
+
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div> -->
+        <!-- <?php
+        if (isset($_SESSION['type']) && $_SESSION['type'] == "admin") {
+
+        ?> -->
+        <a href="admin/admin.php">Dashboard</a>
+        <!-- <?php
+        }
+        ?> -->
+        <a href="logout.php">Logout</a>
+        &nbsp;
+
+    </nav>
+
+    <!-- <div class="logo">
+        <a href="index.php"><img src="img/logo.png" alt="Logo" width="150px" height="40px"></a>
+    </div> -->
+
+    <!-- <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"> -->
+
+</header>
+<body>
+    <div class="aboutdiv">
+        <div class="company" id="company">
+            <div class="company-about">
+                <h1>Company</h1>
+                <div class="comptext">
+                    <h3>XTREME Company</h3>
+                    <p>At <i>XTREME</i>, we create pathways to connect millions of sellers and buyers in more than 100
+                        markets around the world.
+                        Our technology empowers our customers, providing everyone the opportunity to grow and thrive —
+                        no matter who they
+                        are or where they are in the world. And the ripple effect of our work creates waves of change
+                        for our customers,
+                        our company, our communities and our planet.</p>
+                </div>
+                <div class="compimg">
+                    <img src="img/logo.png" alt="" width="390px" height="250px">
+                </div>
+            </div>
+
+        </div>
+        <div class="team" id="team">
+            <h1>Team</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed accusamus delectus rem, optio blanditiis
+                dicta.</p>
+            <div class="team-about">
+                <div class="team1">
+                    <div class="containe">
+                        <div class="img-containe">
+                            <img src="img/Ardian.jfif" alt="Photo profile">
+                        </div>
+                        <p class="full-name">Ardian Hoti</p>
+                        <p class="role">UX/UI Developer</p>
+                        <p class="description">
+                            Hi there! I'am Ardian Hoti owner of the company, also UX/UI Developer.
+                        </p>
+                        <div class="social-containe">
+                            <a href="https://www.facebook.com"><i class="icon ion-social-facebook"></i></a>
+                            <a href="https://www.twitter.com"><i class="icon ion-social-twitter"></i></a>
+                            <a href="https://www.instagram.com"><i class="icon ion-social-instagram"></i></a>
+                            <a href="https://www.github.com"><i class="icon ion-social-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team2">
+                    <div class="containe">
+                        <div class="img-containe">
+                            <img src="img/musli.jpeg" alt="Photo profile">
+                        </div>
+                        <p class="full-name">Musli Thaqi</p>
+                        <p class="role">Photographer</p>
+                        <p class="description">
+                            Hi there! I'm Musli Thaqi Co-Owner of the company also a proffessional Photographer.
+                        </p>
+                        <div class="social-containe">
+                            <a href="https://www.facebook.com"><i class="icon ion-social-facebook"></i></a>
+                            <a href="https://www.twitter.com"><i class="icon ion-social-twitter"></i></a>
+                            <a href="https://www.instagram.com"><i class="icon ion-social-instagram"></i></a>
+                            <a href="https://www.github.com"><i class="icon ion-social-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="terms" id="terms">
+            <div class="legacy-about">
+                <h1>Terms&Condition</h1>
+                <p>Terms of service are the legal agreements between a service provider and a person who wants to use that service. The person must agree to abide by the terms of service in order to use the offered service. Terms of service can also be merely a disclaimer, especially regarding the use of websites..</p>
+            </div>
+
+        </div>
+    </div>
+
+    <body>
+
+        <!-- <?php include'footer.php'?> -->
+        <script src="main.js"></script>
+    </body>
+
+</html>
